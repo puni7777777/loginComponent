@@ -12,6 +12,20 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        'slideLeft': 'slideLeft 1s ease-in-out',
+        'slideRight': 'slideRight 1s ease-in-out',
+      },
+      keyframes: {
+        slideRight: {
+          '0%': { left: '0%', color: '#dc2626' },
+          '100%': { left: '50%', color: 'white' },
+        },
+        slideLeft: {
+          '0%': { left: '50%', color: '#dc2626' },
+          '100%': { left: '0%', color: 'white' },
+        },
+      }
     },
   },
   plugins: [],
